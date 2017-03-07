@@ -1,0 +1,33 @@
+<%- include ./layouts/header -%>
+    <div class="container">
+        <div class="row">
+            <div class="main">
+                <h3>Sign Up</h3>
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" class="form-control" id="signupName">
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" class="form-control" id="signupEmail">
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" class="form-control" id="signupPassword">
+                </div>
+                <div class="row">
+                    <div class="col-xs-9">
+                        <button type="submit" class="btn btn btn-primary" id="submitSignup">
+                            Sign up
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default" id="backToLogin">
+                            Back
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include ./layouts/footer -%>

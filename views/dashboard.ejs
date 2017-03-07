@@ -1,0 +1,54 @@
+<%- include ./layouts/header -%>
+    <div class="selectors_container">
+        <h2 style="color: #3598dc; text-align:center">Welcome to BYG</h2>
+        <p style="text-align:center">Fitness. Anytime. Anywhere</p>
+        <hr>
+        <h5 style="text-align:center">Please select a city and choose your favourite gym</h5>
+        <div class="form-group">
+            <label for="city" style="font-size:16px">City:</label>
+            <select class="form-control" id="city">
+                <option value="">Select</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="gym" style="font-size:16px">Gym:</label>
+            <select class="form-control" id="gym">
+                <option value="">Select</option>
+            </select>
+        </div>
+        <div class="gymDetails" style="display:none">
+            <h3>Gym Details</h3>
+            <div class="gymContainer" style="padding-left:100px">
+                <div class="row">
+                    <label class="col-md-4 control-label" style="font-size:18px;">Gym Name</label>
+                    <div class="col-md-6">
+                        <input id="gymName" class="form-control" placeholder="Gym Name" type="text">
+                        <span class="help-block">Name of the Gym </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-md-4 control-label" style="font-size:18px;">Latitude</label>
+                    <div class="col-md-6">
+                        <input id="gymLatitude" class="form-control" placeholder="Latitude" type="text">
+                        <span class="help-block">Latitude co-ordinates</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-md-4 control-label" style="font-size:18px;">Longitude</label>
+                    <div class="col-md-6">
+                        <input id="gymLongitude" class="form-control" placeholder="Longitude" type="text">
+                        <span class="help-block">Longitude co-ordinates</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="col-md-4 control-label" style="font-size:18px;">Address</label>
+                    <div class="col-md-6">
+                        <input id="gymAddress" class="form-control" placeholder="Address" type="text">
+                        <span class="help-block">Address of the gym</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include ./layouts/footer -%>
+        <script type="text/javascript" src="/assets/javascripts/dashboard.js"></script>
