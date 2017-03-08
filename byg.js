@@ -4,13 +4,15 @@ var ejs = require('ejs');
 var http = require('http');
 var path = require('path');
 var mysql = require('mysql');
+// Setup express app 
+var app = express()
 var bodyParser = require('body-parser');
 
 // Seting the template engine
 app.set('view engine', 'ejs');
 
-// Setup express app 
-var app = express()
+
+
 
 // import all application modules
 var login = require('./routes/login.js');
